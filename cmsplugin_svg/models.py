@@ -39,6 +39,7 @@ class SvgImage(CMSPlugin):
         CMSPlugin,
         related_name='+',
         parent_link=True,
+        on_delete=models.CASCADE,
     )
 
     label = models.CharField(
@@ -57,8 +58,9 @@ class SvgImage(CMSPlugin):
         verbose_name=_('tag Type'),
         max_length=50,
         choices=TAG_TYPE_CHOICES,
-        null=True,
+        null=False,
         blank=True,
+        default='',
     )
 
     svg_image = FilerFileField(

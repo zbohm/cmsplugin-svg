@@ -12,6 +12,7 @@ from .models import SvgImage
 ####################################################################################################
 
 class SvgImagePlugin(CMSPluginBase):
+    text_enabled = True
 
     model = SvgImage
     name = _("SVG Image")

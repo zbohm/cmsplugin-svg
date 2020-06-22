@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 from cmsplugin_svg import __version__
 
 REQUIREMENTS = [
-    'django-cms>=3.0.12',
-    'django-filer>=0.9.9',
-    'django>=1.7',
+    'django-cms>=3.6.0',
+    'django-filer>=1.6.0',
+    'django>=1.9',
 ]
 
 CLASSIFIERS = [
